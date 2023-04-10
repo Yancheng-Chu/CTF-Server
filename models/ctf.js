@@ -9,10 +9,33 @@ const loginSchema = new mongoose.Schema({
     },
     flag:{
         type:String
+    },
+    image:{
+        type:String
     }
 }) 
 
 const login = mongoose.model("Users",loginSchema)
+
+const blogSchema = new mongoose.Schema({
+    name:{
+        type:String
+    },
+    date:{
+        type:String
+    },
+    context:{
+        type:String
+    },
+    file:{
+        type:String
+    },
+    show:{
+        type:Boolean
+    }
+}) 
+
+const blog = mongoose.model("Blogs",blogSchema)
 
 const profileSchema = new mongoose.Schema({
     userInfo:{
@@ -28,13 +51,15 @@ const profileSchema = new mongoose.Schema({
 
 const profile = mongoose.model("ctfList",profileSchema)
 
-// login.create({
-//     _id:'11111',
-//     account:'www',
-//     userInfo:'char'
+// blog.create({
+//     name:'www',
+//     date:'char',
+//     context:'',
+//     file:''
 // })
 
 module.exports = {
     login,
-    profile
+    profile,
+    blog
 }
