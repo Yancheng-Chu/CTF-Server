@@ -1,3 +1,11 @@
+/*
+* @Author: yancheng chu
+* @Date: 2023-03-13 01:30:00
+* @LastEditors: yancheng chu
+* @LastEditTime: 2023-04-13 03:00:00
+* @Path: https://github.com/Yancheng-Chu/
+* @Description:CTF
+*/
 const mongoose = require("mongoose");
 
 const loginSchema = new mongoose.Schema({
@@ -10,7 +18,7 @@ const loginSchema = new mongoose.Schema({
     flag:{
         type:String
     },
-    image:{
+    tfa:{
         type:String
     }
 }) 
