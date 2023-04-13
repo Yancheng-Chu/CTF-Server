@@ -53,19 +53,5 @@ router.post("/login", async (req, res) => {
 
 });
 
-// find _id : new ObjectId(_id)
-
-router.post('/orderEdit', async (req, res) => {
-  try {
-    const { _id, account } = req.body
-    const result = await profile.findByIdAndUpdate(_id, {
-      account: 'flag'
-    })
-    res.send(result);
-  } catch (err) {
-    res.send("Edited Failed!", err);
-  }
-})
-
 
 module.exports = router;
