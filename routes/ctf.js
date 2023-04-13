@@ -1,3 +1,11 @@
+/*
+* @Author: yancheng chu
+* @Date: 2023-03-13 01:30:00
+* @LastEditors: yancheng chu
+* @LastEditTime: 2023-04-13 03:00:00
+* @Path: https://github.com/Yancheng-Chu/
+* @Description:CTF
+*/
 const express = require("express");
 const { login, profile,blog } = require("../models/ctf");
 const router = express.Router();
