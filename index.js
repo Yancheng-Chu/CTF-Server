@@ -13,7 +13,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
-const port = 1919;
+const port = 8081;
 const ctf = require("./routes/ctf");
 
 app.use(bodyParser.json());
