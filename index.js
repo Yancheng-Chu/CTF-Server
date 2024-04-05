@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 const { login } = require("./models/ctf");
-const url = "mongodb+srv://char:aa123456@cluster0.6dxh1s5.mongodb.net/ctf?retryWrites=true&w=majority"
+const url = ""
 
 mongoose.connect(url, {
   useNewUrlParser: true,
